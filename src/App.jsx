@@ -45,14 +45,14 @@ function App() {
   return (
     < main >
       {gameWon && <Confetti width={width} height={height} />}
-      <div aria-live='polite' className='sr-only'>
+      <div aria-live='polite' aria-atomic="true" className='sr-only'>
         {gameWon && <p>Congratulations! You won! Press "New Game" to start again.</p>}
       </div>
       <div className='dice-content'>
         <div className="description">
-          <span className="tenzies-logo">🎲</span>
-          <h1>Tenzies</h1>
-          <p>Roll until all dice are the same. Click each die to freeze it at its current value between rolls.</p>
+          <span className="tenzies-logo">{!gameWon ? "🎲" : "🏆"}</span>
+          <h1>{!gameWon ? "Tenzies" : "Tenzies!"}</h1>
+          <p>{!gameWon ? "Roll until all dice are the same. Click each die to freeze it at its current value between rolls." : "Congratulations! You won! Press new game to start again."}</p>
         </div>
         <div className="dice-wrapper">
           {diceElements}
