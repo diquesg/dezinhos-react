@@ -77,16 +77,24 @@ button{
 
 .roll-button{
   border: none;
+  display: flex;
   background: rgb(175,163,255);
 background: linear-gradient(180deg, rgb(187, 177, 255) 0%, rgba(95,70,255,1) 8%, rgba(80,53,255,1) 27%, rgba(72,44,255,1) 93%, rgba(20,7,105,1) 100%);
   color: white;
   font-weight: bold;
-  padding: .7em 2.1em;
+  padding: .7em 1.5em;
   font-size: 1.1em;
   margin-top: 2em;
   border-radius: 0.5em;
   box-shadow: rgba(0, 0, 0, 0.1) 0px -2px 2px 0px inset, rgba(0, 0, 0, 0.15) 0px -3px 3px 0px inset, rgba(0, 0, 0, 0.1) 0px -30px 10px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 4px 4px, rgba(0, 0, 0, 0.09) 0px 2px 1px;
   cursor: pointer;
+}
+
+.roll-button svg{
+  width: 1.13em;
+  padding: 0;
+  margin-right: .3em;
+  margin-left: -0.2em;
 }
 
 .roll-button:hover{
@@ -113,6 +121,10 @@ background: linear-gradient(180deg, rgb(187, 177, 255) 0%, rgba(95,70,255,1) 8%,
   margin-bottom: 1.7em;
   font-family: "Inter", sans-serif;
   color: #4A4E74;
+}
+
+.tenzies-logo{
+  font-size: 1.5em;
 }
 
 .sr-only {
