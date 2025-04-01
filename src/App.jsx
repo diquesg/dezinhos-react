@@ -4,25 +4,40 @@ import Die from './components/Die'
 
 function App() {
 
+  function generateRandomValue() {
+    return Math.ceil(Math.random() * 6)
+  }
+
   function generateAllNewDice() {
     const diceObjArray = []
     for (var i = 0; i < 10; i++) {
-      diceObjArray.push({ value: Math.ceil(Math.random() * 6), isHeld: false, id: nanoid() })
+      diceObjArray.push({ value: generateRandomValue(), isHeld: false, id: nanoid() })
     }
     return diceObjArray
   }
 
   const [dice, setDice] = useState(generateAllNewDice)
 
-  const diceElements = dice.map((dieObj) => <Die value={dieObj.value} key={dieObj.id} isHeld={dieObj.isHeld} />)
+  const diceElements = dice.map((dieObj) => <Die value={dieObj.value} key={dieObj.id} isHeld={dieObj.isHeld} hold={() => hold(dieObj.id)} />)
 
   function rollDice() {
-    setDice(generateAllNewDice)
+    setDice(prevDice => prevDice.map(dieObj => dieObj.isHeld ? dieObj : { ...dieObj, value: generateRandomValue() }))
+  }
+
+  function hold(id) {
+    setDice(prevDice => prevDice.map(
+      dieObj =>
+        dieObj.id === id ? { ...dieObj, isHeld: !dieObj.isHeld } : dieObj
+    ))
   }
 
   return (
     < main >
       <div className='dice-content'>
+        <div className="description">
+          <h1>Tenzies</h1>
+          <p>Roll until all dice are the same. Click each die to freeze it at its current value between rolls.</p>
+        </div>
         <div className="dice-wrapper">
           {diceElements}
         </div>
