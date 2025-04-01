@@ -4,7 +4,7 @@
 
 body {
     margin: 0;
-    background-color: #0B2434;
+    background-color: #121213;
     padding: 1em;
     height: 100vh;
     display: flex;
@@ -22,7 +22,7 @@ div#root {
 }
 
 main {
-    background-color: #F5F5F5;
+    background-color: #e0e0e0;
     height: 100%;
     border-radius: 0.5em;
     display: flex;
@@ -79,7 +79,7 @@ button{
   border: none;
   display: flex;
   background: rgb(175,163,255);
-background: linear-gradient(180deg, rgb(187, 177, 255) 0%, rgba(95,70,255,1) 8%, rgba(80,53,255,1) 27%, rgba(72,44,255,1) 93%, rgba(20,7,105,1) 100%);
+  background: linear-gradient(180deg, rgb(187, 177, 255) 0%, rgba(95,70,255,1) 8%, rgba(80,53,255,1) 27%, rgb(117, 97, 248) 93%, rgba(0, 0, 0, 0.74) 100%);
   color: white;
   font-weight: bold;
   padding: .7em 1.5em;
@@ -98,8 +98,8 @@ background: linear-gradient(180deg, rgb(187, 177, 255) 0%, rgba(95,70,255,1) 8%,
 }
 
 .roll-button:hover{
-  background: rgb(139,124,242);
-  background: linear-gradient(180deg, rgba(139,124,242,1) 0%, rgba(82,58,241,1) 8%, rgba(72,46,238,1) 27%, rgba(57,30,233,1) 93%, rgba(13,4,78,1) 100%);
+  background: rgb(175,163,255);
+  background: linear-gradient(180deg, rgb(187, 177, 255) 0%, rgba(95,70,255,1) 8%, rgba(80,53,255,1) 27%, rgb(136, 119, 243) 93%, rgb(0, 0, 0, 0.74) 100%);
 }
 
 .description{
@@ -137,4 +137,89 @@ background: linear-gradient(180deg, rgb(187, 177, 255) 0%, rgba(95,70,255,1) 8%,
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border: 0;
+}
+
+@media(max-width: 440px){
+  div#root {
+    height: 100%;
+    width: 100%;
+    max-height: 25em;
+    max-width: 25em;
+  }
+
+  body{
+    font-size: .85em;
+  }
+
+    .description p{
+    font-size: 1.1em;
+  }
+
+}
+
+@media(min-width: 441px){
+    div#root {
+    height: 100%;
+    width: 100%;
+    max-height: 25em;
+    max-width: 25em;
+  }
+
+  body{
+    font-size: 0.95em;
+  }
+
+  .description p{
+    font-size: 1.1em;
+  }
+}
+
+@media(min-width: 850px){
+  div#root {
+    height: 100%;
+    width: 100%;
+    max-height: 28em;
+    max-width: 37em;
+  }
+
+  body{
+    font-size: 0.95em;
+  }
+
+  main {
+      height: 100%;
+      border-radius: 1em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .tenzies-logo{
+    font-size: 1.75em;
+  }
+
+  .description{
+    max-width: 95%;
+  }
+
+  .description p{
+    font-size: 1.21em;
+    line-height: 1.6em;
+  }
+
+  .description h1{
+    font-size: 2.2em;
+  }
+
+  .tenzies-logo{
+    font-size: 1.8em;
+  }
+
+  .dice-wrapper{
+    font-size: 1.1em;
+  }
+
+  .roll-button{
+    font-size: 1.2em;
+  }
 }

@@ -13,9 +13,50 @@
   <title>Tenzies React</title>
 </head>
 
-<body>
+<body class="header finisher-header" style="width: 100vw; height: 100vh;">
   <div id="root"></div>
   <script type="module" src="/src/main.jsx"></script>
+  <script src="finisher-header.es5.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    new FinisherHeader({
+      "count": 150,
+      "size": {
+        "min": 5,
+        "max": 35,
+        "pulse": 0.1
+      },
+      "speed": {
+        "x": {
+          "min": 0,
+          "max": 0.1
+        },
+        "y": {
+          "min": 0,
+          "max": 0.1
+        }
+      },
+      "colors": {
+        "background": "#121213",
+        "particles": [
+          "#461acb",
+          "#5c58ff",
+          "#ad2bea",
+          "#1c3dd5"
+        ]
+      },
+      "blending": "screen",
+      "opacity": {
+        "center": 0.3,
+        "edge": 0.3
+      },
+      "skew": 0,
+      "shapes": [
+        "s",
+        "t",
+        "c"
+      ]
+    });
+  </script>
 </body>
 
 </html>
