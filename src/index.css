@@ -6,6 +6,7 @@ html {
   height: -webkit-fill-available;
 }
 
+
 body {
     margin: 0;
     background-color: #121213;
@@ -60,6 +61,34 @@ button{
   cursor: pointer;
   border-radius: .3em;
   box-shadow: rgba(0, 0, 0, 0.1) 0px -2px 2px 0px inset, rgba(0, 0, 0, 0.15) 0px -3px 3px 0px inset, rgba(0, 0, 0, 0.1) 0px -30px 10px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 12px 8px, rgba(0, 0, 0, 0.09) 0px 3px 1px;
+  position: relative;
+  overflow: hidden;
+}
+
+.die-button.winner-glow::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    135deg,
+    rgba(255,255,255,0) 30%,
+    rgba(251, 255, 252, 0.671) 50%,
+    rgba(255,255,255,0) 70%
+  );
+  animation: diagonal-shine 2.5s infinite linear;
+  transform: rotate(30deg);
+}
+
+@keyframes diagonal-shine {
+  0% {
+    transform: rotate(0deg) translate(-100%, -100%);
+  }
+  100% {
+    transform: rotate(0deg) translate(100%, 100%);
+  }
 }
 
 .die-button:hover{
@@ -78,8 +107,9 @@ button{
 }
 
 .die-button-isheld:hover{
-  background-color: #68e299;
+  background-color: #68e299 !important;
 }
+
 
 .dice-content {
   display: flex;
@@ -279,3 +309,4 @@ button{
     padding-bottom: env(safe-area-inset-bottom);
   }
 }
+

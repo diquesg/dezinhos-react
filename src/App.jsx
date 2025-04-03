@@ -28,7 +28,8 @@ function App() {
 
   const [dice, setDice] = useState(() => generateAllNewDice())
 
-  const diceElements = dice.map((dieObj) => <Die value={dieObj.value} key={dieObj.id} isHeld={dieObj.isHeld} hold={() => hold(dieObj.id)} />)
+  const gameWon = dice.every(dieObj => dieObj.value === dice[0].value) && dice.every(dieObj => dieObj.isHeld === true)
+  const diceElements = dice.map((dieObj) => <Die value={dieObj.value} gameWon={gameWon} key={dieObj.id} isHeld={dieObj.isHeld} hold={() => hold(dieObj.id)} />)
 
   function rollDice() {
     !isRunning && start()
@@ -44,7 +45,6 @@ function App() {
     ))
   }
 
-  const gameWon = dice.every(dieObj => dieObj.value === dice[0].value) && dice.every(dieObj => dieObj.isHeld === true)
 
   const gameWonRef = useRef(null)
 
