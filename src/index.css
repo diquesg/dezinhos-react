@@ -36,7 +36,8 @@ div#root {
     width: 100%;
     max-height: 25em;
     max-width: 25em;
-    box-shadow: rgba(102, 102, 102, 0.5) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    box-shadow: rgba(102, 102, 102, 0.2) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    border-radius: 0.5em;
 }
 
 main {
@@ -49,7 +50,6 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: rgba(102, 102, 102, 0.5) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 }
 
 .dice-wrapper{
@@ -220,6 +220,8 @@ button{
     width: 100%;
     max-height: 27em;
     max-width: 26em;
+    box-shadow: rgba(102, 102, 102, 0.2) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    border-radius: 1em;
   }
 
   main{
