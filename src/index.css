@@ -67,6 +67,9 @@ button{
   color: #2B283A;
   background-color: #FFFFFF;
   border: none;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
   font-size: 1.5em;
   font-weight: bold;
   cursor: pointer;
