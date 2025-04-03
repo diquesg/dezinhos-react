@@ -222,6 +222,10 @@ button{
     max-width: 26em;
   }
 
+  main{
+    border-radius: 1em;
+  }
+
   body{
     font-size: .85em;
   }
