@@ -156,8 +156,8 @@ button{
 }
 
 .roll-button:hover{
-  background: rgb(175,163,255);
-  background: linear-gradient(180deg, rgb(187, 177, 255) 0%, rgba(95,70,255,1) 8%, rgb(83, 56, 255) 27%, rgb(131, 113, 248) 85%, rgb(69, 44, 230) 96%);
+  background: rgb(157, 144, 240);
+  background: linear-gradient(180deg, rgb(187, 177, 255) 0%, rgb(89, 64, 247) 8%, rgb(83, 56, 255) 27%, rgb(131, 113, 248) 85%, rgb(69, 44, 230) 96%);
 }
 
 .description{
