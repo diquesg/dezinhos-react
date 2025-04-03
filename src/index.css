@@ -137,7 +137,7 @@ button{
   border: none;
   display: flex;
   background: rgb(175,163,255);
-  background: linear-gradient(180deg, rgb(187, 177, 255) 0%, rgba(95,70,255,1) 8%, rgba(80,53,255,1) 27%, rgb(117, 97, 248) 93%, rgba(0, 0, 0, 0.74) 100%);
+  background: linear-gradient(180deg, rgb(187, 177, 255) 0%, rgba(95,70,255,1) 8%, rgba(80,53,255,1) 27%, rgb(126, 108, 243) 85%, rgba(80,53,255,1) 96%);
   color: white;
   font-weight: bold;
   padding: .7em 1.5em;
@@ -157,7 +157,7 @@ button{
 
 .roll-button:hover{
   background: rgb(175,163,255);
-  background: linear-gradient(180deg, rgb(187, 177, 255) 0%, rgba(95,70,255,1) 8%, rgba(80,53,255,1) 27%, rgb(136, 119, 243) 93%, rgb(0, 0, 0, 0.74) 100%);
+  background: linear-gradient(180deg, rgb(187, 177, 255) 0%, rgba(95,70,255,1) 8%, rgb(83, 56, 255) 27%, rgb(131, 113, 248) 85%, rgb(69, 44, 230) 96%);
 }
 
 .description{
@@ -241,6 +241,7 @@ button{
 
   .roll-button{
     font-size: 1.2em;
+    margin-top: 1.35em;
   }
 
 }
