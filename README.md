@@ -1,12 +1,12 @@
-# React + Vite
+# Dezinhos
+Dezinhos é um jogo dinâmico e emocionante onde o objetivo é fazer com que todos os dados mostrem o mesmo valor. Com um design moderno e acessível, o jogo desafia sua sorte e estratégia em uma corrida contra os números. Divertido, rápido e perfeito para qualquer momento do dia.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Desenvolvido em React, Dezinhos utiliza hooks como useState para gerenciar o estado dos dados e useEffect para controlar efeitos colaterais.
 
-Currently, two official plugins are available:
+Principais Funcionalidades:
+- **Renderização Condicional** – Alterna entre "Rolar" e "Novo Jogo" dinamicamente.
+- **Acessibilidade** – Mensagens aria-live para leitores de tela e foco gerenciado via useRef.
+- **CSS Responsivo** – Estilização responsiva com media queries e efeitos visuais suaves.
+- **Lógica de vitória** – Verificação eficiente usando every() para comparar os dados.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Tecnologias principais: **React, Vite, JavaScript, CSS.**
