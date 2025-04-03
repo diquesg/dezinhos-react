@@ -239,6 +239,10 @@ button{
     font-size: 1.1em;
   }
 
+  .roll-button{
+    font-size: 1.2em;
+  }
+
 }
 
 @media(min-width: 441px){
