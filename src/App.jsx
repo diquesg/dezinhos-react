@@ -54,7 +54,7 @@ function App() {
 
   return (
     < main >
-      {gameWon && <Confetti width={width} height={height} numberOfPieces={window.innerWidth < 768 ? 90 : 200} />}
+      {gameWon && <Confetti width={width} height={height} numberOfPieces={window.innerWidth < 768 ? 120 : 200} />}
       <div aria-live='polite' aria-atomic="true" className='sr-only'>
         {gameWon && <p>Parabéns! Você venceu! Clique em "Novo jogo" para recomeçar.</p>}
       </div>
